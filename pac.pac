@@ -1,0 +1,25 @@
+function FindProxyForURL(url, host)
+{
+if (isResolvable(host))
+return "DIRECT";
+else
+return "
+//印度
+PROXY 36.67.45.71:8080;
+PROXY 202.154.18.17:8080;
+//菲律宾
+PROXY 124.105.79.237:8080;
+//北京
+PROXY 106.75.5.102:8090;
+//浙江杭州
+PROXY 114.55.225.14:80;
+PROXY 118.178.254.32:80;
+PROXY 116.62.32.179:80;
+PROXY 114.55.111.42:80;
+//吉林延边
+PROXY 122.136.212.132:53281;
+//安徽马鞍山
+PROXY 114.102.47.79:8089;
+
+DIRECT";
+}
